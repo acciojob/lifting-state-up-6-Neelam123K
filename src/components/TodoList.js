@@ -1,12 +1,12 @@
 import React from 'react';
 
-const TodoList = ({todos, handleCOmplete}) => {
+const TodoList = ({todos, handleComplete}) => {
   return (
     <ul>
       {todos.map(todo => (
         <li key={todo.id}>
           {todo.text}
-          <button onClick={() => handleCOmplete(todo.id)}>
+          <button onClick={() => handleComplete(todo.id)}>
             complete
           </button>
         </li>
