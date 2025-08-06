@@ -11,7 +11,8 @@ const App = () => {
 
   const handleComplete = (id) => { setTodos(todos.map(todo => 
     todo.id === id ? { ...todo, completed: true } : todo
-  )); }
+  )); 
+};
   return (
     <div>
         {/* Do not remove the main div */}
